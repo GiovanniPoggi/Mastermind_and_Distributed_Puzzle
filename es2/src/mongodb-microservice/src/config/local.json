@@ -1,0 +1,6 @@
+{
+  "api.name": "mongodb",
+  "store.http.port": 8083,
+  "android.bus.http.host": "localhost",
+  "auth.http.address": "localhost"
+}

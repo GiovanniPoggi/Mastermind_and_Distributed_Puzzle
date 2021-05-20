@@ -1,0 +1,6 @@
+{
+  "api.name": "auth-api",
+  "auth.http.address": "authentication-microservice",
+  "auth.http.port": 8086,
+  "max_pool_size": 30
+}

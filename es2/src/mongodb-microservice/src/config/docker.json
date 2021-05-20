@@ -1,0 +1,6 @@
+{
+  "api.name": "mongo-api",
+  "mongodb-microservice.http.address": "mongodb-microservice",
+  "mongodb-microservice.http.port": 8083,
+  "host": "mongo"
+}

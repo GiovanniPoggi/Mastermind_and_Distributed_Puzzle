@@ -1,0 +1,63 @@
+version: "3"
+services:
+  redis:
+    container_name: redis-service
+    image: redis:latest
+    expose:
+      - "6379"
+    networks:
+      - backend
+  mongo:
+    image: mongo:latest
+    expose:
+      - "27017"
+    networks:
+      - backend
+  mysql:
+    image: mysql:latest
+    expose:
+      - "3306"
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=666666
+      - MYSQL_DATABASE=global_chat
+    networks:
+      - backend
+  mongodb-microservice:
+    image: assignment3-pt2/mongodb-microservice
+    expose:
+      - "8083"
+    networks:
+      - backend
+  mysql-microservice:
+    image: assignment3-pt2/mysql-microservice
+    expose:
+      - "8084"
+    networks:
+      - backend
+  authentication-microservice:
+    container_name: authentication-microservice
+    image: assignment3-pt2/authentication-microservice
+    expose:
+      - "8086"
+    networks:
+      - backend
+  puzzle-microservice:
+    container_name: puzzle-microservice
+    image: assignment3-pt2/puzzle-microservice
+    ports:
+      - "9001:9001"
+    expose:
+      - "8081"
+    networks:
+      - backend
+  api-gateway:
+    image: assignment3-pt2/api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_OPTS="-Xms128m -Xmx256m"
+    networks:
+      - backend
+networks:
+  backend:

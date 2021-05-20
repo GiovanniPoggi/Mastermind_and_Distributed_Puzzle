@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for api-gateway" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\api-gateway/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="api-gateway" />
+      </profile>
+      <profile name="Annotation profile for authentication-microservice" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\authentication-microservice/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="authentication-microservice" />
+      </profile>
+      <profile name="Annotation profile for mongodb-microservice" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\mongodb-microservice/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="mongodb-microservice" />
+      </profile>
+      <profile name="Annotation profile for mysql-microservice" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\mysql-microservice/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="mysql-microservice" />
+      </profile>
+      <profile name="Annotation profile for puzzle-microservice" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\puzzle-microservice/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="puzzle-microservice" />
+      </profile>
+      <profile name="Annotation profile for assignment3-pt2.microservices" enabled="true">
+        <sourceOutputDir name="src/main/generated" />
+        <sourceTestOutputDir name="src/test/generated" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="codegen.output" value="D:\UNIVERSITA'\Magistrale\Programmazione Concorrente e Distribuita\Assignment\03\assignment3\assignment3-pt2\microservices-common/src/main" />
+        <processor name="io.vertx.codegen.CodeGenProcessor" />
+        <module name="microservices-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

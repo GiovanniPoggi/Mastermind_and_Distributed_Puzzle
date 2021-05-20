@@ -1,0 +1,5 @@
+{
+  "api.name": "puzzle-api",
+  "puzzle-microservice.http.address": "puzzle-microservice",
+  "puzzle-microservice.http.port": 8081
+}

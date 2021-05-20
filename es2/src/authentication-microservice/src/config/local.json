@@ -1,0 +1,7 @@
+{
+  "api.name": "auth-api",
+  "android.bus.http.host": "localhost",
+  "auth.http.address": "localhost",
+  "auth.http.port": 8086,
+  "max_pool_size": 30
+}

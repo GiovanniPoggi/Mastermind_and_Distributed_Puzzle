@@ -1,0 +1,11 @@
+{
+  "api.name": "mysql-api",
+  "android.bus.http.host": "localhost",
+  "auth.http.address": "localhost",
+  "mysql-microservice.http.port": 8084,
+  "url": "jdbc:mysql://mysql:3306/global_chat?characterEncoding=UTF-8&useSSL=false",
+  "driver_class": "com.mysql.cj.jdbc.Driver",
+  "user": "root",
+  "password": "666666",
+  "host": "mysql"
+}

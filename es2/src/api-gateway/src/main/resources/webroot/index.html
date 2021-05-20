@@ -1,0 +1,88 @@
+<!--
+ * HTML File that manage the View of the Global Puzzle.
+ *
+ * @author Giovanni Poggi
+ -->
+<!DOCTYPE html>
+<html charset="UTF-8">
+<head>
+    <title>Assignment3</title>
+    <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="js/vertx-eventbus.js"></script>
+    <script src="js/realtime-global-puzzle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="onlineUsers" onload="init();">
+<div id="login" align="center"><h1 style="margin-top:95px;!Important">Sign In:</h1><br>
+    <form>
+        <label for="loginUsername">Username:</label><br>
+        <input id="loginUsername" name="loginUsername" type="text" required /><br><br>
+        <label for="loginPassword">Password:</label><br>
+        <input id="loginPassword" name="loginPassword" type="password" required /><br><br>
+        <button type="submit" id="updateBtn">Sign In</button>
+        <p onclick="changeView()">Not Register? Just Sign Up!</p>
+        <p onclick="changeViewLazy()">Too Lazy to write? Just Sign In as a Guest!</p>
+    </form>
+</div>
+<div id="register" align="center"><h1 style="margin-top:40px;!Important">Sign Up:</h1><br>
+    <form>
+        <label for="registerName">Name:</label><br>
+        <input id="registerName" name="registerName" type="text" required /><br><br>
+        <label for="registerUsername">Username:</label><br>
+        <input id="registerUsername" name="registerUsername" type="text" required /><br><br>
+        <label for="registerEmail">Email:</label><br>
+        <input id="registerEmail" name="registerEmail" type="text" required /><br><br>
+        <label for="registerPassword">Password:</label><br>
+        <input id="registerPassword" name="registerPassword" type="password" required /><br><br>
+        <button type="submit" id="addBtn">Sign Up</button>
+        <p onclick="changeView()">Already Register? Just Sign In!</p>
+        <p onclick="changeViewLazy()">Too Lazy to write? Just Sign In as a Guest!</p>
+    </form>
+</div>
+<div id="lazyLogin" align="center"><h1 style="margin-top:150px;!Important">Lazy Sign In:</h1><br>
+    <form style="margin-top:-35px;!Important">
+        <label for="lazyUsername">Username:</label><br>
+        <input id="lazyUsername" name="lazyUsername" type="text" required /><br><br>
+        <button type="submit" id="lazyAddBtn">Go to the Puzzle!</button>
+    </form>
+</div>
+
+<h1 style="margin-top: -150px;!Important">Assignment3</h1>
+
+<div id="toHide">Insert Link Image: <input type="text" id="links" name="links"><br/>
+    Choose Size: <select id="gridCols">
+        <option value="4">4</option>
+    </select><br/><br/></div>
+
+<button id="start" type="button" onClick="play()">PLAY</button><br/><button id="join" type="button" onClick="join()">JOIN</button>
+
+<table id="displayImage" cellspacing="0" style="border-collapse: collapse" onmousemove="mouse_position()">
+    <tr>
+        <td><img id="0" src="" onClick="swap(this.id)"></td>
+        <td><img id="1" src="" onClick="swap(this.id)"></td>
+        <td><img id="2" src="" onClick="swap(this.id)"></td>
+        <td><img id="3" src="" onClick="swap(this.id)"></td>
+    </tr>
+    <tr>
+        <td><img id="4" src="" onClick="swap(this.id)"></td>
+        <td><img id="5" src="" onClick="swap(this.id)"></td>
+        <td><img id="6" src="" onClick="swap(this.id)"></td>
+        <td><img id="7" src="" onClick="swap(this.id)"></td>
+    </tr>
+    <tr>
+        <td><img id="8" src="" onClick="swap(this.id)"></td>
+        <td><img id="9" src="" onClick="swap(this.id)"></td>
+        <td><img id="10" src="" onClick="swap(this.id)"></td>
+        <td><img id="11" src="" onClick="swap(this.id)"></td>
+    </tr>
+    <tr>
+        <td><img id="12" src="" onClick="swap(this.id)"></td>
+        <td><img id="13" src="" onClick="swap(this.id)"></td>
+        <td><img id="14" src="" onClick="swap(this.id)"></td>
+        <td><img id="15" src="" onClick="swap(this.id)"></td>
+    </tr>
+</table>
+</body>
+<script src="./js/function.js"></script>
+</html>

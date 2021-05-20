@@ -1,0 +1,56 @@
+/**
+* CSS File that Support HTML File to manage the View of the Global Puzzle.
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+    background-color: #222222;
+    color: rgb(255,255,255);
+}
+p {
+    cursor: pointer;
+}
+#login, #register, #lazyLogin {
+    display: block;
+	position: absolute;
+	border: 2px solid black;
+	width: 80%;
+	height: 60%;
+	box-shadow: 0px 0px 50px grey;
+	border-radius: 20px;
+	background-color: rgb(0,0,0);
+}
+#register {
+    display: none;
+}
+#lazyLogin {
+    display: none;
+}
+h1 {
+    font-size: 40px !Important;
+}
+input {
+    border-radius: 10px;
+}
+button {
+    color: rgb(128,128,128) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 10px;
+    border: 4px solid rgb(192,192,192) !important;
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+button:hover, #btn1:hover, #btn2:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
